@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -15,11 +14,35 @@ body {
 }
 
 .form-container {
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
+    margin-right: 32vw;
+    margin-left: 16px;
 }
 
-fieldset {
-    border: none;
+h2 {
+    text-align: left;
+}
+
+#form-elements > label {
+    display: block;
+    float: left;
+    width: 30%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 84px;
+    row-gap: 18px;
+    margin-bottom: 18px;
+}
+
+.form-row > div {
+    float: left;
+    width: 30%;
+}
+
+.form-row > div > input {
+    padding-left: 5rem;
 }
