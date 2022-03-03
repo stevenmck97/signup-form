@@ -7,42 +7,88 @@ body {
 }
 
 .bg-img-container {
-    width: 100vw;
+    width: 44vw;
     height: 100vh;
     background: url("/bg-img.jpeg");
     background-repeat: no-repeat;
 }
 
-.form-container {
-    flex-direction: column;
-    align-content: center;
-    margin-right: 32vw;
-    margin-left: 16px;
+#form-text:first-child {
+    margin-top: 10%;
+}
+
+#form-text,
+.form-row,
+#form-btns,
+#form-elements > p {
+    margin: 0 0 1rem 2.5rem;
 }
 
 h2 {
     text-align: left;
 }
 
-#form-elements > label {
-    display: block;
-    float: left;
-    width: 30%;
+#form-elements {
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+#form-elements > p {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .form-row {
     display: flex;
-    flex-direction: row;
-    column-gap: 84px;
-    row-gap: 18px;
     margin-bottom: 18px;
+}
+
+.form-row:last-child {
+    padding-bottom: 2rem;
 }
 
 .form-row > div {
     float: left;
-    width: 30%;
+    width: 25%;
+}
+
+.form-row > div:nth-child(2n + 2) {
+    margin-left: 1.2rem;
 }
 
 .form-row > div > input {
-    padding-left: 5rem;
+    padding: 0.4rem 5rem 0.4rem 0;
+}
+
+input.error {
+    border-color: red;
+}
+
+.form-row > div > p {
+    color: red;
+    margin-top: 0;
+}
+
+#form-btns > button {
+    padding: 10px 45px 10px 45px;
+    border: none;
+    border-radius: 8%;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+}
+
+p > a {
+    color: green;
+}
+
+.banner {
+    margin-top: 25%;
+    padding: 5px 38% 5px;
+    background-color: black;
+    opacity: 80%;
+}
+
+.banner > img {
+    width: 150px;
+    height: 150px;
 }

@@ -10,7 +10,9 @@
     <body>
         <div class="container">
             <div class="bg-img-container">
-                
+                <div class="banner">
+                    <img src="/odin-lined.png" alt="banner-img">
+                </div>
             </div>
             <div class="form-container">
                 <div id="form-text">
@@ -23,6 +25,7 @@
                     <h2>You <em>know</em> you want to.</h2>
                 </div>
                 <div id="form-elements">
+                    <p>Let's do this!</p>
                     <div class="form-row">
                         <div>
                             <label for="firstName">FIRST NAME</label>
@@ -61,7 +64,9 @@
                                 type="password"
                                 id="password"
                                 name="password"
+                                class="error"
                             />
+                            <p>*Passwords do not match</p>
                         </div>
                         <div>
                             <label for="confirmPassword"
@@ -71,6 +76,7 @@
                                 type="password"
                                 id="confirmPassword"
                                 name="confirmPassword"
+                                class="error"
                             />
                         </div>
                     </div class="form-row">
