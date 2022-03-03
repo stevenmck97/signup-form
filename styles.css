@@ -1,3 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.bg-img-container {
+    width: 100vw;
+    height: 100vh;
+    background: url("/bg-img.jpeg");
+    background-repeat: no-repeat;
+}
+
 .form-container {
     display: flex;
     flex-direction: column;
